@@ -1,0 +1,870 @@
+<!DOCTYPE html>
+<html lang="ru">
+	<head>
+		<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+		<!-- Переключение IE в последнию версию, на случай если в настройках пользователя стоит меньшая -->
+		<meta http-equiv="X-UA-Compatible" content="IE=edge">
+
+		<!-- Адаптирование страницы для мобильных устройств -->
+		<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+
+		<!-- Запрет распознования номера телефона -->
+		<meta name="format-detection" content="telephone=no">
+		<meta name="SKYPE_TOOLBAR" content ="SKYPE_TOOLBAR_PARSER_COMPATIBLE">
+
+		<!-- Заголовок страницы -->
+		<title>Заголовок страницы</title>
+
+		<!-- Данное значение часто используют(использовали) поисковые системы -->
+		<meta name="description" content="">
+		<meta name="keywords" content="">
+
+		<!-- Традиционная иконка сайта, размер 16x16, прозрачность поддерживается. Рекомендуемый формат: .ico или .png -->
+		<link rel="shortcut icon" href="favicon.ico">
+
+		<!-- Подключение файлов стилей -->
+		<link rel="stylesheet" href="css/swiper-bundle.min.css">
+		<link rel="stylesheet" href="css/fancybox.css">
+		<link rel="stylesheet" href="css/styles.css">
+
+		
+		<link rel="stylesheet" href="css/response_1199.css" media="(max-width: 1199px)">
+		<link rel="stylesheet" href="css/response_1023.css" media="(max-width: 1023px)">
+		<link rel="stylesheet" href="css/response_767.css" media="(max-width: 767px)">
+		<link rel="stylesheet" href="css/response_479.css" media="(max-width: 479px)">
+	</head>
+	<body>
+		<div class="wrap">
+			<!-- Шапка -->
+			<header class="header">
+				<div class="cont _flex">
+					<div class="header__logo">
+						<a href="/">
+							<img src="images/logo.svg" alt="">
+						</a>
+					</div>
+
+					<div class="header-catalog">
+						<button type="button" class="header-catalog__open">Каталог</button>
+
+						<div class="header-catalog__block">
+							<div class="header-catalog__wrap">
+								<div class="header-catalog__items _flex">
+									<a href="/" class="header-catalog__item">
+										<span class="header-catalog__icon">
+											<img data-src="images/tmp/ic_cats1.svg" src="images/img_plug.png" alt="" class="lazyload">
+										</span>
+
+										<span class="header-catalog__bot">
+											<span class="header-catalog__name">Куб Лофт</span>
+										</span>
+									</a>
+									<a href="/" class="header-catalog__item">
+										<span class="header-catalog__icon">
+											<img data-src="images/tmp/ic_cats2.svg" src="images/img_plug.png" alt="" class="lazyload">
+										</span>
+
+										<span class="header-catalog__bot">
+											<span class="header-catalog__name">Колонна Лофт</span>
+										</span>
+									</a>
+									<a href="/" class="header-catalog__item">
+										<span class="header-catalog__icon">
+											<img data-src="images/tmp/ic_cats3.svg" src="images/img_plug.png" alt="" class="lazyload">
+										</span>
+
+										<span class="header-catalog__bot">
+											<span class="header-catalog__name">Контейнер Лофт</span>
+										</span>
+									</a>
+									<a href="/" class="header-catalog__item">
+										<span class="header-catalog__icon">
+											<img data-src="images/tmp/ic_cats4.svg" src="images/img_plug.png" alt="" class="lazyload">
+										</span>
+
+										<span class="header-catalog__bot">
+											<span class="header-catalog__name">Разделитель Лофт</span>
+										</span>
+									</a>
+									<a href="/" class="header-catalog__item">
+										<span class="header-catalog__icon">
+											<img data-src="images/tmp/ic_cats5.svg" src="images/img_plug.png" alt="" class="lazyload">
+										</span>
+
+										<span class="header-catalog__bot">
+											<span class="header-catalog__name">Пирамида Лофт</span>
+										</span>
+									</a>
+									<a href="/" class="header-catalog__item">
+										<span class="header-catalog__icon">
+											<img data-src="images/tmp/ic_cats6.svg" src="images/img_plug.png" alt="" class="lazyload">
+										</span>
+
+										<span class="header-catalog__bot">
+											<span class="header-catalog__name">Куб радиус</span>
+										</span>
+									</a>
+									<a href="/" class="header-catalog__item">
+										<span class="header-catalog__icon">
+											<img data-src="images/tmp/ic_cats7.svg" src="images/img_plug.png" alt="" class="lazyload">
+										</span>
+
+										<span class="header-catalog__bot">
+											<span class="header-catalog__name">Колонна Радиус</span>
+										</span>
+									</a>
+									<a href="/" class="header-catalog__item">
+										<span class="header-catalog__icon">
+											<img data-src="images/tmp/ic_cats8.svg" src="images/img_plug.png" alt="" class="lazyload">
+										</span>
+
+										<span class="header-catalog__bot">
+											<span class="header-catalog__name">Контейнер Радиус</span>
+										</span>
+									</a>
+									<a href="/" class="header-catalog__item">
+										<span class="header-catalog__icon">
+											<img data-src="images/tmp/ic_cats9.svg" src="images/img_plug.png" alt="" class="lazyload">
+										</span>
+
+										<span class="header-catalog__bot">
+											<span class="header-catalog__name">Разделитель Радиус</span>
+										</span>
+									</a>
+									<a href="/" class="header-catalog__item">
+										<span class="header-catalog__icon">
+											<img data-src="images/tmp/ic_cats10.svg" src="images/img_plug.png" alt="" class="lazyload">
+										</span>
+
+										<span class="header-catalog__bot">
+											<span class="header-catalog__name">Контейнер Овал</span>
+										</span>
+									</a>
+									<a href="/" class="header-catalog__item">
+										<span class="header-catalog__icon">
+											<img data-src="images/tmp/ic_cats11.svg" src="images/img_plug.png" alt="" class="lazyload">
+										</span>
+
+										<span class="header-catalog__bot">
+											<span class="header-catalog__name">Разделитель Овал</span>
+										</span>
+									</a>
+									<a href="/" class="header-catalog__item">
+										<span class="header-catalog__icon">
+											<img data-src="images/tmp/ic_cats12.svg" src="images/img_plug.png" alt="" class="lazyload">
+										</span>
+
+										<span class="header-catalog__bot">
+											<span class="header-catalog__name">Цилиндр Лофт</span>
+										</span>
+									</a>
+									<a href="/" class="header-catalog__item">
+										<span class="header-catalog__icon">
+											<img data-src="images/tmp/ic_cats13.svg" src="images/img_plug.png" alt="" class="lazyload">
+										</span>
+
+										<span class="header-catalog__bot">
+											<span class="header-catalog__name">Цилиндр Лофт высокий</span>
+										</span>
+									</a>
+									<a href="/" class="header-catalog__item">
+										<span class="header-catalog__icon">
+											<img data-src="images/tmp/ic_cats14.svg" src="images/img_plug.png" alt="" class="lazyload">
+										</span>
+
+										<span class="header-catalog__bot">
+											<span class="header-catalog__name">Цилиндр Радиус</span>
+										</span>
+									</a>
+									<a href="/" class="header-catalog__item">
+										<span class="header-catalog__icon">
+											<img data-src="images/tmp/ic_cats15.svg" src="images/img_plug.png" alt="" class="lazyload">
+										</span>
+
+										<span class="header-catalog__bot">
+											<span class="header-catalog__name">Цилиндр Радиус высокий</span>
+										</span>
+									</a>
+									<a href="/" class="header-catalog__item">
+										<span class="header-catalog__icon">
+											<img data-src="images/tmp/ic_cats16.svg" src="images/img_plug.png" alt="" class="lazyload">
+										</span>
+
+										<span class="header-catalog__bot">
+											<span class="header-catalog__name">Ваза Классик</span>
+										</span>
+									</a>
+									<a href="/" class="header-catalog__item">
+										<span class="header-catalog__icon">
+											<img data-src="images/tmp/ic_cats17.svg" src="images/img_plug.png" alt="" class="lazyload">
+										</span>
+
+										<span class="header-catalog__bot">
+											<span class="header-catalog__name">Ваза Классик высокая</span>
+										</span>
+									</a>
+									<a href="/" class="header-catalog__item">
+										<span class="header-catalog__icon">
+											<img data-src="images/tmp/ic_cats18.svg" src="images/img_plug.png" alt="" class="lazyload">
+										</span>
+
+										<span class="header-catalog__bot">
+											<span class="header-catalog__name">Чаша Классик</span>
+										</span>
+									</a>
+									<a href="/" class="header-catalog__item">
+										<span class="header-catalog__icon">
+											<img data-src="images/tmp/ic_cats19.svg" src="images/img_plug.png" alt="" class="lazyload">
+										</span>
+
+										<span class="header-catalog__bot">
+											<span class="header-catalog__name">Ваза Оазис</span>
+										</span>
+									</a>
+									<a href="/" class="header-catalog__item">
+										<span class="header-catalog__icon">
+											<img data-src="images/tmp/ic_cats20.svg" src="images/img_plug.png" alt="" class="lazyload">
+										</span>
+
+										<span class="header-catalog__bot">
+											<span class="header-catalog__name">Ваза Оазис высокая</span>
+										</span>
+									</a>
+									<a href="/" class="header-catalog__item">
+										<span class="header-catalog__icon">
+											<img data-src="images/tmp/ic_cats21.svg" src="images/img_plug.png" alt="" class="lazyload">
+										</span>
+
+										<span class="header-catalog__bot">
+											<span class="header-catalog__name">Чаша Оазис</span>
+										</span>
+									</a>
+									<a href="/" class="header-catalog__item">
+										<span class="header-catalog__icon">
+											<img data-src="images/tmp/ic_cats22.svg" src="images/img_plug.png" alt="" class="lazyload">
+										</span>
+
+										<span class="header-catalog__bot">
+											<span class="header-catalog__name">Конус Лофт</span>
+										</span>
+									</a>
+									<a href="/" class="header-catalog__item">
+										<span class="header-catalog__icon">
+											<img data-src="images/tmp/ic_cats23.svg" src="images/img_plug.png" alt="" class="lazyload">
+										</span>
+
+										<span class="header-catalog__bot">
+											<span class="header-catalog__name">Конус Лофт высокий</span>
+										</span>
+									</a>
+									<a href="/" class="header-catalog__item">
+										<span class="header-catalog__icon">
+											<img data-src="images/tmp/ic_cats24.svg" src="images/img_plug.png" alt="" class="lazyload">
+										</span>
+
+										<span class="header-catalog__bot">
+											<span class="header-catalog__name">Ваза Аура</span>
+										</span>
+									</a>
+									<a href="/" class="header-catalog__item">
+										<span class="header-catalog__icon">
+											<img data-src="images/tmp/ic_cats25.svg" src="images/img_plug.png" alt="" class="lazyload">
+										</span>
+
+										<span class="header-catalog__bot">
+											<span class="header-catalog__name">Ваза Аура высокая</span>
+										</span>
+									</a>
+									<a href="/" class="header-catalog__item">
+										<span class="header-catalog__icon">
+											<img data-src="images/tmp/ic_cats26.svg" src="images/img_plug.png" alt="" class="lazyload">
+										</span>
+
+										<span class="header-catalog__bot">
+											<span class="header-catalog__name">Чаша Аура</span>
+										</span>
+									</a>
+									<a href="/" class="header-catalog__item">
+										<span class="header-catalog__icon">
+											<img data-src="images/tmp/ic_cats27.svg" src="images/img_plug.png" alt="" class="lazyload">
+										</span>
+
+										<span class="header-catalog__bot">
+											<span class="header-catalog__name">Полусфера</span>
+										</span>
+									</a>
+									<a href="/" class="header-catalog__item">
+										<span class="header-catalog__icon">
+											<img data-src="images/tmp/ic_cats28.svg" src="images/img_plug.png" alt="" class="lazyload">
+										</span>
+
+										<span class="header-catalog__bot">
+											<span class="header-catalog__name">Сфера</span>
+										</span>
+									</a>
+									<a href="/" class="header-catalog__item">
+										<span class="header-catalog__icon">
+											<img data-src="images/tmp/ic_cats29.svg" src="images/img_plug.png" alt="" class="lazyload">
+										</span>
+
+										<span class="header-catalog__bot">
+											<span class="header-catalog__name">Баллон</span>
+										</span>
+									</a>
+								</div>
+							</div>
+						</div>
+					</div>
+
+					<form action="" class="header-search _flex">
+						<input type="text" name="" value="" placeholder="Поиск по товарам" autocomplete="off" id="search_input" class="header-search__input">
+						
+						<button type="submit" class="header-search__submit">
+							<svg>
+								<use xlink:href="images/sprite.svg#lupa"></use>
+							</svg>
+						</button>
+					</form>
+
+					<div class="nav-menu _flex">
+						<div class="nav-menu__item _hide">
+							<a href="/">Каталог</a>
+						</div>
+						<div class="nav-menu__item">
+							<a href="/">О компании</a>
+						</div>
+						<div class="nav-menu__item">
+							<a href="/">Контакты</a>
+						</div>	
+					</div>
+
+					<div class="header__box _flex">
+						<div class="heade__contacts">
+							<div class="header__phone">
+								<a href="tel:+79611433904">+7-961-143-39-04</a>
+							</div>
+
+							<button type="button" data-content="#callback" class="header__btn modal-btn">Кашпо на заказ</button>
+						</div>
+	
+						<div class="header-links _flex">
+							<div class="header-links__item">
+								<a href="/" class="header-links__link">
+									<span class="header-links__icon">
+										<svg>
+											<use xlink:href="images/sprite.svg#user"></use>
+										</svg>
+									</span>
+
+									<span class="header-links__name">Войти</span>
+								</a>
+							</div>
+							<div class="header-links__item">
+								<a href="/" class="header-links__link">
+									<span class="header-links__icon">
+										<span class="header-links__count">0</span>
+
+										<svg>
+											<use xlink:href="images/sprite.svg#cart"></use>
+										</svg>
+									</span>
+
+									<span class="header-links__name">Корзина</span>
+								</a>
+							</div>
+						</div>
+					</div>
+				</div>
+			</header>
+
+			<div class="header__mob">
+				<div class="cont _flex">
+					<div class="header__logo">
+						<a href="/">
+							<img src="images/logo.svg" alt="">
+						</a>
+					</div>
+
+					<button type="button" class="header__open"></button>
+				</div>
+			</div>
+
+			<div class="overlay-catalog"></div>
+
+			<!-- End Шапка -->
+
+			<div class="main">
+				<section class="first-section">
+					<div class="cont">
+						<div class="first-section__wrap">
+							<div class="first-section__bg">
+								<img data-src="images/banner.jpg" src="images/img_plug.png" alt="" class="lazyload">
+							</div>
+
+							<div class="first-section__block">
+								<div class="first-section__info">
+									<h1 class="first-section__title">Дизайнерские кашпо из стеклопластика и полимербетона</h1>
+
+									<div class="first-section__desc">
+										Сочетание эстетики бетона и камня <br>с прочностью современных композитов
+									</div>
+
+									<div class="first-section__link">
+										<a href="/">Смотреть каталог</a>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</section>
+
+
+				<section class="advantages _marg">
+					<div class="cont">
+						<div class="advantages__title">TFBeton — надежный поставщик для архитекторов, дизайнеров и ритейла</div>
+
+						<div class="advantages__info">
+							<div class="advantages__text">
+								В каталоге TFBeton — более 30 коллекций серийных моделей. Каждая модель доступна в разных размерах — от компактных интерьерных решений (настольных и напольных) до крупногабаритных объектов для улицы и общественных пространств
+							</div>
+
+							<div class="main-link advantages__link">
+								<a href="/">
+									<span>Узнать больше</span>
+									
+									<svg>
+										<use xlink:href="images/sprite.svg#arrow"></use>
+									</svg>
+								</a>
+							</div>
+						</div>
+
+						<div class="advantages__items">
+							<div class="advantages__item">
+								<img data-src="images/tmp/adv_img1.jpg" src="images/img_plug.png" alt="" class="advantages__img lazyload">
+							</div>
+
+							<div class="advantages__item">
+								<img data-src="images/tmp/adv_img2.jpg" src="images/img_plug.png" alt="" class=" advantages__img lazyload">
+							</div>
+
+							<div class="advantages__item _big">
+								<img data-src="images/tmp/adv_img3.jpg" src="images/img_plug.png" alt="" class=" advantages__img lazyload">
+							</div>
+
+							<div class="advantages__item _mob">
+								<div class="advantages__box">
+									<div class="advantages__icon">
+										<img data-src="images/ic_adv1.svg" src="images/img_plug.png" alt="" class="lazyload">
+									</div>
+
+									<div class="advantages__name">Забота</div>
+
+									<div class="advantages__desc">
+										Личный менеджер всегда на связи, подготовит 3D-визуализацию с выбранными кашпо в вашем проекте на этапе коммерческого предложения
+									</div>
+								</div>
+							</div>
+
+							<div class="advantages__item _mob">
+								<div class="advantages__box">
+									<div class="advantages__icon">
+										<img data-src="images/ic_adv2.svg" src="images/img_plug.png" alt="" class="lazyload">
+									</div>
+
+									<div class="advantages__name">Адаптация</div>
+
+									<div class="advantages__desc">
+										200+ оттенков, любой цвет по RAL или NCS. Добавим ваши пигменты и фактуры. Кашпо подойдут для любого ландшафта или интерьера
+									</div>
+								</div>
+							</div>
+
+							<div class="advantages__item _big _mob">
+								<div class="advantages__box">
+									<div class="advantages__icon">
+										<img data-src="images/ic_adv3.svg" src="images/img_plug.png" alt="" class="lazyload">
+									</div>
+
+									<div class="advantages__name">Производство</div>
+
+									<div class="advantages__desc">
+										В TF Beton каждое кашпо производится в России на собственной фабрике полного цикла. Совмещаем современные технологии с ручной работой наших мастеров, чтобы каждое изделие было уникальным. Используем качественные бетонные смеси и контролируем процесс на каждом этапе производства, гарантируя долговечность и эстетическую привлекательность
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</section>
+
+
+				<section class="main-catalog _marg">
+					<div class="cont">
+						<div class="main-title">TFBeton предлагает</div>
+
+						<div class="main-catalog__grid _flex">
+							<a href="/" class="main-catalog__item">
+								<span class="main-catalog__name">Баллон</span>
+
+								<span class="main-catalog__img">
+									<img data-src="images/tmp/cats_img1.jpg" src="images/img_plug.png" alt="" class="lazyload">
+								</span>
+							</a>
+							<a href="/" class="main-catalog__item">
+								<span class="main-catalog__name">Колонна</span>
+
+								<span class="main-catalog__img">
+									<img data-src="images/tmp/cats_img2.jpg" src="images/img_plug.png" alt="" class="lazyload">
+								</span>
+							</a>
+							<a href="/" class="main-catalog__item">
+								<span class="main-catalog__name">Разделитель</span>
+
+								<span class="main-catalog__img">
+									<img data-src="images/tmp/cats_img3.jpg" src="images/img_plug.png" alt="" class="lazyload">
+								</span>
+							</a>
+							<a href="/" class="main-catalog__item">
+								<span class="main-catalog__name">Куб</span>
+
+								<span class="main-catalog__img">
+									<img data-src="images/tmp/cats_img4.jpg" src="images/img_plug.png" alt="" class="lazyload">
+								</span>
+							</a>
+							<a href="/" class="main-catalog__item">
+								<span class="main-catalog__name">Цилиндр</span>
+
+								<span class="main-catalog__img">
+									<img data-src="images/tmp/cats_img5.jpg" src="images/img_plug.png" alt="" class="lazyload">
+								</span>
+							</a>
+							<a href="/" class="main-catalog__item">
+								<span class="main-catalog__name">Пирамида</span>
+
+								<span class="main-catalog__img">
+									<img data-src="images/tmp/cats_img6.jpg" src="images/img_plug.png" alt="" class="lazyload">
+								</span>
+							</a>
+							<a href="/" class="main-catalog__item">
+								<span class="main-catalog__name">Чаша</span>
+
+								<span class="main-catalog__img">
+									<img data-src="images/tmp/cats_img7.jpg" src="images/img_plug.png" alt="" class="lazyload">
+								</span>
+							</a>
+							<a href="/" class="main-catalog__item">
+								<span class="main-catalog__name">Ваза</span>
+
+								<span class="main-catalog__img">
+									<img data-src="images/tmp/cats_img8.jpg" src="images/img_plug.png" alt="" class="lazyload">
+								</span>
+							</a>
+							<a href="/" class="main-catalog__item">
+								<span class="main-catalog__name">Контейнер</span>
+
+								<span class="main-catalog__img">
+									<img data-src="images/tmp/cats_img9.jpg" src="images/img_plug.png" alt="" class="lazyload">
+								</span>
+							</a>
+							<a href="/" class="main-catalog__item">
+								<span class="main-catalog__name">Сфера</span>
+
+								<span class="main-catalog__img">
+									<img data-src="images/tmp/cats_img10.jpg" src="images/img_plug.png" alt="" class="lazyload">
+								</span>
+							</a>
+						</div>
+
+						<div class="main-catalog__bot">
+							<div class="main-link">
+								<a href="/">
+									<span>Смотреть все категории</span>
+									
+									<svg>
+										<use xlink:href="images/sprite.svg#arrow"></use>
+									</svg>
+								</a>
+							</div>
+						</div>
+					</div>
+				</section>
+
+
+				<section class="portfolio _marg">
+					<div class="cont">
+						<div class="main-title">Коммерческие проекты</div>
+
+						<div class="portfolio__slider swiper">
+							<div class="swiper-wrapper">
+								<div class="swiper-slide">
+									<a href="images/tmp/foto2.jpg" data-fancybox="gallery-foto" class="portfolio__img _long fancy-img">
+										<img data-src="images/tmp/foto2.jpg" src="images/img_plug.png" alt="" class="lazyload">
+									</a>
+								</div>
+								<div class="swiper-slide">
+									<a href="images/tmp/foto3.jpg" data-fancybox="gallery-foto" class="portfolio__img fancy-img">
+										<img data-src="images/tmp/foto3.jpg" src="images/img_plug.png" alt="" class="lazyload">
+									</a>
+								</div>
+								<div class="swiper-slide">
+									<a href="images/tmp/foto4.jpg" data-fancybox="gallery-foto" class="portfolio__img _long fancy-img">
+										<img data-src="images/tmp/foto4.jpg" src="images/img_plug.png" alt="" class="lazyload">
+									</a>
+								</div>
+								<div class="swiper-slide">
+									<a href="images/tmp/foto5.jpg" data-fancybox="gallery-foto" class="portfolio__img fancy-img">
+										<img data-src="images/tmp/foto5.jpg" src="images/img_plug.png" alt="" class="lazyload">
+									</a>
+								</div>
+								<div class="swiper-slide">
+									<a href="images/tmp/foto6.jpg" data-fancybox="gallery-foto" class="portfolio__img _long fancy-img">
+										<img data-src="images/tmp/foto6.jpg" src="images/img_plug.png" alt="" class="lazyload">
+									</a>
+								</div>
+								<div class="swiper-slide">
+									<a href="images/tmp/foto1.jpg" data-fancybox="gallery-foto" class="portfolio__img fancy-img">
+										<img data-src="images/tmp/foto1.jpg" src="images/img_plug.png" alt="" class="lazyload">
+									</a>
+								</div>
+							</div>
+						</div>
+					</div>
+				</section>
+
+
+				<section class="order-project _marg">
+					<div class="cont">
+						<div class="order-project__bg">
+							<div class="order-project__wrap _flex">
+								<div class="main-title _white order-project__title-w">Реализуем ваши самые смелые идеи!</div>
+	
+								<div class="order-project__desc">
+									Производство продукции по вашему тех. заданию: эксклюзивный дизайн, износостойкие материалы, декоративная подсветка и яркие расцветки!
+								</div>
+	
+								<div class="order-project__link">
+									<a href="/">Рассчитать индивидуальный проект</a>
+								</div>
+							</div>
+						</div>
+					</div>
+				</section>
+			</div>
+
+
+			<footer class="footer">
+				<div class="cont">
+					<div class="footer__bg">
+						<div class="footer__wrap _flex">
+							<div class="footer-cats">
+								<div class="footer__title">Каталог</div>
+	
+								<div class="footer-cats__cols _flex">
+									<div class="footer-cats__col">
+										<div class="footer-cats__item">
+											<a href="/">Куб Лофт</a>
+										</div>
+										<div class="footer-cats__item">
+											<a href="/">Куб радиус</a>
+										</div>
+										<div class="footer-cats__item">
+											<a href="/">Колонна Лофт</a>
+										</div>
+										<div class="footer-cats__item">
+											<a href="/">Колонна Радиус</a>
+										</div>
+										<div class="footer-cats__item">
+											<a href="/">Конус Лофт</a>
+										</div>
+										<div class="footer-cats__item">
+											<a href="/">Конус Лофт высокий</a>
+										</div>
+										<div class="footer-cats__item">
+											<a href="/">Сфера</a>
+										</div>
+										<div class="footer-cats__item">
+											<a href="/">Баллон</a>
+										</div>
+									</div>
+	
+									<div class="footer-cats__col">
+										<div class="footer-cats__item">
+											<a href="/">Цилиндр Радиус</a>
+										</div>
+										<div class="footer-cats__item">
+											<a href="/">Цилиндр Лофт</a>
+										</div>
+										<div class="footer-cats__item">
+											<a href="/">Цилиндр Лофт высокий</a>
+										</div>
+										<div class="footer-cats__item">
+											<a href="/">Цилиндр Радиус высокий</a>
+										</div>
+										<div class="footer-cats__item">
+											<a href="/">Чаша Оазис</a>
+										</div>
+										<div class="footer-cats__item">
+											<a href="/">Чаша Классик</a>
+										</div>
+										<div class="footer-cats__item">
+											<a href="/">Чаша Аура</a>
+										</div>
+									</div>
+	
+									<div class="footer-cats__col">
+										<div class="footer-cats__item">
+											<a href="/">Контейнер Радиус</a>
+										</div>
+										<div class="footer-cats__item">
+											<a href="/">Контейнер Лофт</a>
+										</div>
+										<div class="footer-cats__item">
+											<a href="/">Контейнер Овал</a>
+										</div>
+										<div class="footer-cats__item">
+											<a href="/">Разделитель Радиус</a>
+										</div>
+										<div class="footer-cats__item">
+											<a href="/">Разделитель Лофт</a>
+										</div>
+										<div class="footer-cats__item">
+											<a href="/">Разделитель Овал</a>
+										</div>
+										<div class="footer-cats__item">
+											<a href="/">Полусфера</a>
+										</div>
+									</div>
+	
+									<div class="footer-cats__col">
+										<div class="footer-cats__item">
+											<a href="/">Пирамида Лофт</a>
+										</div>
+										<div class="footer-cats__item">
+											<a href="/">Ваза Оазис</a>
+										</div>
+										<div class="footer-cats__item">
+											<a href="/">Ваза Аура высокая</a>
+										</div>
+										<div class="footer-cats__item">
+											<a href="/">Ваза Аура</a>
+										</div>
+										<div class="footer-cats__item">
+											<a href="/">Ваза Классик</a>
+										</div>
+										<div class="footer-cats__item">
+											<a href="/">Ваза Оазис высокая</a>
+										</div>
+										<div class="footer-cats__item">
+											<a href="/">Ваза Классик высокая</a>
+										</div>
+									</div>
+								</div>
+							</div>
+	
+							<div class="footer__contacts">
+								<div class="footer__title">Контактная информация</div>
+	
+								<div class="footer__phone">
+									<a href="tel:+79611433904">+7-961-143-39-04</a>
+								</div>
+	
+								<div class="footer__mail">
+									<a href="mailto:tversfb@mail.ru">tversfb@mail.ru</a>
+								</div>
+	
+								<div class="footer__address">г. Тверь, ул. Шишкова, 91а</div>
+	
+								<div class="footer__time">Пн-Чт 9:00-18:00, Пт 9:00-17:00</div>
+	
+								<div class="footer__socials _flex">
+									<a href="/" target="_blank" class="footer__socials-link">
+										<img data-src="images/ic_soc1.svg" src="images/img_plug.png" alt="" class="lazyload">
+									</a>
+									<a href="/" target="_blank" class="footer__socials-link">
+										<img data-src="images/ic_soc2.svg" src="images/img_plug.png" alt="" class="lazyload">
+									</a>
+									<a href="/" target="_blank" class="footer__socials-link">
+										<img data-src="images/ic_soc3.svg" src="images/img_plug.png" alt="" class="lazyload">
+									</a>
+								</div>
+							</div>
+	
+							<div class="footer__bot _flex">
+								<div class="footer__copy">&copy; 2006–2025, TFBeton</div>
+	
+								<div class="footer__policy">
+									<a href="/">Политика конфиденциальности</a>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</footer>
+		</div>
+
+		
+		<div id="callback2" class="modal">
+			<div class="modal__wrap">
+				<div class="modal__title">Кашпо на заказ</div>
+
+				<div class="modal__subtitle">
+					Для оформления заказа Вам необходимо оставить заявку на нашем сайте, написать в WhatsApp или позвонить по телефону. Наши специалисты помогут Вам оформить заказ, предложат оптимальные варианты для реализации ваших идей.
+				</div>
+
+				<form action="" class="form modal__form">
+					<div class="form__line">
+						<input type="text" value="" placeholder="Имя*" class="form__input">
+					</div>
+
+					<div class="form__line">
+						<input type="tel" value="" placeholder="Телефон*" data-mask="+7 (999) 999-99-99" class="form__input">
+					</div>
+
+					<div class="form__line">
+						<input type="email" value="" placeholder="Почта*" class="form__input">
+					</div>
+
+					<div class="form__line">
+						<textarea class="form__textarea" placeholder="Сообщение*"></textarea>
+					</div>
+
+					<div class="modal__info">
+						<div>Вы можете прикрепить файлы</div>
+
+						<div class="modal__desc">Ваши фото, чертежи, эскизы или просто рисунок от руки</div>
+					</div>
+
+					<div class="file-selection">
+
+					</div>
+
+					<div class="form__agree checkbox">
+						<label class="checkbox__label">
+							<input type="checkbox" name="agree" checked>
+
+							<span class="checkbox__text">Нажимая на кнопку "Отправить" вы даете согласие на обработку персональных данных и соглашаетесь с <a href="/" target="_blank">политикой конфиденциальности</a></span>
+						</label>
+					</div>
+
+					<button type="submit" class="form__submit-btn">Отправить</button>
+				</form>
+			</div>
+		</div>
+
+
+		<div class="supports-error">
+			Ваш браузер устарел рекомендуем обновить его до последней версии<br> или использовать другой более современный.
+		</div>
+
+
+		<!-- Подключение javascript файлов -->
+		<script src="js/jquery-3.5.0.min.js"></script>
+
+		<script src="js/swiper-bundle.min.js"></script>
+		<script src="js/fancybox.js"></script>
+		<script src="js/inputmask.min.js"></script>
+
+		<script src="js/functions.js"></script>
+		<script src="js/scripts.js"></script>
+	</body>
+</html>

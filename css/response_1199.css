@@ -1,0 +1,127 @@
+@media (max-width: 1199px)
+{
+	body 
+	{
+        font-size: 14px;
+    }
+
+	.main-title 
+	{
+        font-size: 22px;
+    }
+
+	.main-link a
+	{
+		font-size: 14px;
+	}
+
+	.header-search
+	{
+		margin-left: 15px;
+	}
+
+	.header__phone a
+	{
+		font-size: 16px;
+	}
+
+	.nav-menu__item a
+	{
+		padding: 0 20px;
+	}
+
+	.header-links__item + .header-links__item
+	{
+		margin-left: 15px;
+	}
+
+	.header-catalog, 
+	.header__box, 
+	.header-links 
+	{
+        margin-left: 15px;
+    }
+
+	.header-catalog__block
+	{
+		padding-left: 15px;
+		padding-right: 15px;
+	}
+
+
+	.first-section__info 
+	{
+        max-width: 580px;
+    }
+
+	.first-section__title 
+	{
+        font-size: 32px;
+    }
+
+
+	.advantages__title 
+	{
+        font-size: 36px;
+		max-width: 880px;
+    }
+
+	.advantages__info
+	{
+		max-width: 530px;
+	}
+
+	.advantages__desc
+	{
+		font-size: 14px;
+	}
+
+	.order-project__bg 
+	{
+		padding: 45px 20px;
+	}
+
+	.order-project__desc 
+	{
+        margin-left: 20px;
+        max-width: 350px;
+    }
+
+	.order-project__link
+	{
+		margin-left: 20px;
+	}
+
+	.order-project__link a
+	{
+		padding-left: 20px;
+		padding-right: 20px;
+	}
+
+
+	.footer-cats 
+	{
+        width: calc(100% - 265px);
+    }
+
+	.footer__contacts 
+	{
+        width: 235px;
+    }
+
+	.footer__title
+	{
+		font-size: 18px;
+	}
+
+	.footer__mail, 
+	.footer__address, 
+	.footer__time
+	{
+		font-size: 14px;
+	}
+	/*------------
+		commit
+	------------*/
+
+}
