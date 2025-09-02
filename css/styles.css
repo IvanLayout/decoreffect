@@ -2016,6 +2016,7 @@ input[type=checkbox]:checked + .checkbox__text::after
 .main-catalog__img img
 {
 	max-width: 100%;
+	width: 100%;
 	display: block;
 	aspect-ratio: 1;
 	object-fit: contain;
@@ -2047,22 +2048,85 @@ input[type=checkbox]:checked + .checkbox__text::after
 /*------------
 	portfolio
 ------------*/
-
-.portfolio__slider
+.str_wrap
 {
+    position: relative;
+
     overflow: visible;
 
-    margin-top: 30px;
+    width: 100%;
+
+    white-space: nowrap;
 }
 
-.portfolio__slider-swiper-wrapper
+.str_move
 {
-	transition-timing-function: linear !important;
+    position: absolute;
+    top: 0;
+    left: 0;
+
+    cursor: move;
+    white-space: nowrap;
+}
+.str_move_clone
+{
+    position: absolute;
+    top: 0;
+    left: 100%;
+
+    display: inline-block;
+
+    vertical-align: top;
+}
+.str_vertical .str_move_clone
+{
+    top: 100%;
+    left: 0;
+}
+.str_down .str_move_clone
+{
+    bottom: 100%;
+    left: 0;
+}
+.str_vertical .str_move,
+.str_down .str_move
+{
+    width: 100%;
+
+    white-space: normal;
+}
+.str_static .str_move,
+.no_drag .str_move,
+.noStop .str_move
+{
+    cursor: inherit;
 }
 
-.portfolio__slider-slide
+
+.portfolio__items{
+	margin: 35px 0 0 -20px;
+	width: calc(100% + 20px);
+	display: flex;
+	justify-content: flex-start;
+	align-items: flex-start;
+	align-content: flex-start;
+	flex-wrap: nowrap;
+}
+
+.portfolio__items .str_move
 {
-	position: relative;
+    display: flex;
+
+    justify-content: flex-start;
+    align-items: flex-start;
+    align-content: flex-start;
+    flex-wrap: nowrap;
+}
+
+.portfolio__item{
+	width: 430px;
+	margin-left: 20px;
+	flex-shrink: 0;
 }
 
 .portfolio__img
@@ -2423,6 +2487,12 @@ input[type=checkbox]:checked + .checkbox__text::after
 }
 
 
+@media (max-width: 1810px){
+	.portfolio__item{
+		width: calc(100vw/4 - 22px);
+	}
+}
+
 @media (max-width: 1719px)
 {
 	.header-catalog,
@@ -2550,6 +2620,16 @@ input[type=checkbox]:checked + .checkbox__text::after
 	{
         max-width: 440px;
     }
+
+	.portfolio__items{
+		margin: 30px 0 0 -15px;
+		width: calc(100% + 15px);
+	}
+
+	.portfolio__item{
+		width: calc(100vw/4 - 19px);
+		margin-left: 15px;
+	}
 }
 
 @media (max-width: 1299px)

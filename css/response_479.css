@@ -80,6 +80,15 @@
 	{
 		padding: 12px 18px;
 	}
+
+
+	.main-catalog__grid{
+		margin-top: 5px;
+	}
+
+	.portfolio__items{
+		margin-top: 20px;
+	}
 	/*------------
 		commit
 	------------*/

@@ -244,6 +244,13 @@
 		padding: 14px 25px;
 	}
 
+
+	.portfolio__item{
+		width: calc(100vw/3 - 20px);
+		margin-left: 15px;
+	}
+
+
 	.footer__bg
 	{
 		padding-top: 30px;

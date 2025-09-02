@@ -45,6 +45,11 @@
 		font-size: 18px;
 	}
 
+	.portfolio__item{
+		width: calc(100vw/2 - 22px);
+		margin-left: 15px;
+	}
+
 
 	.footer-cats
 	{
