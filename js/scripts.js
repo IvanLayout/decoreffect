@@ -9,29 +9,78 @@ if (document.body.clientWidth < 375) {
 	document.getElementsByTagName('meta')['viewport'].content = 'width=375, user-scalable=no'
 }
 
+// $(() => {
+// 	if ($('.portfolio__slider').length) {
+// 		new Swiper(".portfolio__slider", {
+// 			loop: true,
+// 			spaceBetween: 20,
+// 			slidesPerView: 'auto',
+// 			allowTouchMove: false,
+// 			speed: 6000,
+// 			preloadImages: false,
+// 			lazy: {
+// 				loadPrevNext: true,
+// 				elementClass: 'lazyload',
+// 				enabled: true,
+// 				loadedClass: 'loaded',
+// 				checkInView: true,
+// 				loadOnTransitionStart: true
+// 			},
+// 			autoplay: {
+// 				delay: 0,
+// 				disableOnInteraction: false,
+// 				pauseOnMouseEnter: true,
+// 			},breakpoints: {
+// 				'320': {
+// 					spaceBetween: 15,
+// 					slidesPerView: 2,
+// 				},
+// 				'480': {
+// 					spaceBetween: 15,
+// 					slidesPerView: 2,
+// 				},
+// 				'768': {
+// 					spaceBetween: 15,
+// 					slidesPerView: 3,
+// 				},
+// 				'1024': {
+// 					spaceBetween: 15,
+// 					slidesPerView: 4,
+// 				},
+// 				'1400': {
+// 					spaceBetween: 20,
+// 					slidesPerView: 4,
+// 				}
+// 			},
+// 		})
+// 	}
+
+// });
+
+
 $(() => {
 	if ($('.portfolio__slider').length) {
-		new Swiper(".portfolio__slider", {
-			loop: true,
-			spaceBetween: 20,
-			slidesPerView: 'auto',
-			watchSlidesProgress: true,
-			watchOverflow: true,
-			preloadImages: false,
-			autoplay: {
-				delay: 3000,
-				pauseOnMouseEnter: true,
-				disableOnInteraction: false,
-			},
-			lazy: {
-				loadPrevNext: true,
-				elementClass: 'lazyload',
-				enabled: true,
-				loadedClass: 'loaded',
-				checkInView: true,
-				loadOnTransitionStart: true
-			},breakpoints: {
-				'320': {
+		const swiper = new Swiper(".portfolio__slider", {
+		loop: true,
+		spaceBetween: 20,
+		slidesPerView: 'auto',
+		allowTouchMove: false,
+		speed: 6000,
+		preloadImages: false,
+		lazy: {
+			loadPrevNext: true,
+			elementClass: 'lazyload',
+			enabled: true,
+			loadedClass: 'loaded',
+			checkInView: true,
+			loadOnTransitionStart: true
+		},
+		autoplay: {
+			delay: 0,
+			disableOnInteraction: false,
+		},
+		breakpoints: {
+			'320': {
 					spaceBetween: 15,
 					slidesPerView: 2,
 				},
@@ -51,11 +100,25 @@ $(() => {
 					spaceBetween: 20,
 					slidesPerView: 4,
 				}
-			},
-		})
+		}
+		});
+
+	  // Мгновенная пауза при наведении
+		$('.portfolio__slider').on('mouseenter', () => {
+			swiper.autoplay.stop();
+		});
+		$('.portfolio__slider').on('mouseleave', () => {
+			swiper.autoplay.start();
+		});
 	}
 
+
+	$(function() {
+		$('.marquee-content').marquee();
+	});
 });
+
+
 
 
 $(window).on('resize', () => {

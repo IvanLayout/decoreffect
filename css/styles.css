@@ -2036,6 +2036,15 @@ input[type=checkbox]:checked + .checkbox__text::after
 }
 
 /*------------
+	marquee-content
+------------*/
+
+.portfolio__flex
+{
+	flex-wrap: nowrap;
+}
+
+/*------------
 	portfolio
 ------------*/
 
@@ -2046,10 +2055,21 @@ input[type=checkbox]:checked + .checkbox__text::after
     margin-top: 30px;
 }
 
+.portfolio__slider-swiper-wrapper
+{
+	transition-timing-function: linear !important;
+}
+
+.portfolio__slider-slide
+{
+	position: relative;
+}
+
 .portfolio__img
 {
 	display: block;
 	text-decoration: none;
+	
 	border-radius: 10px;
 	overflow: hidden;
 }
@@ -2242,6 +2262,7 @@ input[type=checkbox]:checked + .checkbox__text::after
 {
 	text-decoration: none;
 	color: #3F4E55;
+	transition: color .2s linear;
 }
 
 .footer__mail,
@@ -2256,6 +2277,7 @@ input[type=checkbox]:checked + .checkbox__text::after
 {
 	text-decoration: none;
 	color: #3F4E55;
+	transition: color .2s linear;
 }
 
 .footer__socials
@@ -2279,12 +2301,15 @@ input[type=checkbox]:checked + .checkbox__text::after
     text-decoration: none;
 }
 
-.footer__socials-link img
+.footer__socials-link svg
 {
     display: block;
 
-    max-width: 100%;
-    max-height: 100%;
+    width: 29px;
+	height: 29px;
+
+	fill: #3F4E55;
+	transition: fill .2s linear;
 }
 
 .footer__bot
@@ -2330,6 +2355,17 @@ input[type=checkbox]:checked + .checkbox__text::after
 	.footer__policy a:hover::before
 	{
 		background: #3F4E55;
+	}
+
+	.footer__phone a:hover,
+	.footer__mail a:hover
+	{
+		color: #F87B42;
+	}
+
+	.footer__socials-link:hover svg
+	{
+		fill: #F87B42;
 	}
 }
 /*------------
