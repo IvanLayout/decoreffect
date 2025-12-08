@@ -36,7 +36,7 @@ $(window).on('resize', () => {
 	}
 });
 
-
+/*======== 07.12.2025 ========*/
 $(() => {
 	//
 	$('body').on('click', '.amount__btn_minus', function (e) {
@@ -101,3 +101,4 @@ $(() => {
 		$(this).closest('.select-input').find('.nice-select, .current').removeClass('selected')
 	})
 });
+/*======== End 07.12.2025 ========*/
