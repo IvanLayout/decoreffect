@@ -1,0 +1,722 @@
+<!DOCTYPE html>
+<html lang="ru">
+	<head>
+		<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+		<!-- Переключение IE в последнию версию, на случай если в настройках пользователя стоит меньшая -->
+		<meta http-equiv="X-UA-Compatible" content="IE=edge">
+
+		<!-- Адаптирование страницы для мобильных устройств -->
+		<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+
+		<!-- Запрет распознования номера телефона -->
+		<meta name="format-detection" content="telephone=no">
+		<meta name="SKYPE_TOOLBAR" content ="SKYPE_TOOLBAR_PARSER_COMPATIBLE">
+
+		<!-- Заголовок страницы -->
+		<title>Заголовок страницы</title>
+
+		<!-- Данное значение часто используют(использовали) поисковые системы -->
+		<meta name="description" content="">
+		<meta name="keywords" content="">
+
+		<!-- Традиционная иконка сайта, размер 16x16, прозрачность поддерживается. Рекомендуемый формат: .ico или .png -->
+		<link rel="shortcut icon" href="favicon.ico">
+
+		<!-- Подключение файлов стилей -->
+		<link rel="stylesheet" href="css/swiper-bundle.min.css">
+		<link rel="stylesheet" href="css/fancybox.css">
+		<link rel="stylesheet" href="css/styles.css">
+
+		
+		<link rel="stylesheet" href="css/response_1199.css" media="(max-width: 1199px)">
+		<link rel="stylesheet" href="css/response_1023.css" media="(max-width: 1023px)">
+		<link rel="stylesheet" href="css/response_767.css" media="(max-width: 767px)">
+		<link rel="stylesheet" href="css/response_479.css" media="(max-width: 479px)">
+	</head>
+	<body>
+		<div class="wrap">
+			<!-- Шапка -->
+			<header class="header header_lk">
+				<div class="cont _flex">
+					<a href="/" class="header__back">
+						<svg width="24" height="15" viewBox="0 0 24 15" fill="none" xmlns="http://www.w3.org/2000/svg">
+							<path d="M0.292892 6.65686C-0.0976315 7.04739 -0.0976315 7.68055 0.292892 8.07107L6.65685 14.435C7.04738 14.8256 7.68054 14.8256 8.07107 14.435C8.46159 14.0445 8.46159 13.4113 8.07107 13.0208L2.41421 7.36397L8.07107 1.70711C8.46159 1.31659 8.46159 0.683424 8.07107 0.2929C7.68054 -0.0976243 7.04738 -0.0976243 6.65685 0.2929L0.292892 6.65686ZM24 7.36397V6.36397L1 6.36397V7.36397V8.36397L24 8.36397V7.36397Z"/>
+						</svg>
+
+						<span>Вернуться к покупкам</span>
+					</a>
+
+					<div class="header__logo">
+						<a href="/">
+							<img src="images2/logo.svg" alt="">
+						</a>
+					</div>
+
+					<div class="heade__contacts">
+						<div class="header__phone">
+							<a href="tel:+79611433904">+7-961-143-39-04</a>
+						</div>
+
+						<button type="button" data-content="#callback" class="header__btn modal-btn">Кашпо на заказ</button>
+					</div>
+				</div>
+			</header>
+			<!-- End Шапка -->
+
+			<div class="main">
+				<section class="checkout checkout_pad">
+					<div class="cont">
+						<h1 class="page-title">Оформление заказа</h1>
+
+						<form action="" class="form-inner">
+							<div class="checkout__flex checkout__flex_marg _flex">
+								<div class="checkout__coll">
+									<div class="checkout__top _flex">
+										<div class="checkbox-inner">
+											<label class="checkbox-inner__label">
+												<input type="checkbox" name="all" checked>
+
+												<span class="checkbox-inner__text">Выделить все</span>
+											</label>
+										</div>
+
+										<div class="checkout__delete">
+											<button class="checkout__delete-btn">
+												<svg width="17" height="17" viewBox="0 0 17 17" fill="none" xmlns="http://www.w3.org/2000/svg">
+													<path d="M2.125 4.25H3.54167H14.875" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+													<path d="M13.4587 4.25033V14.167C13.4587 14.5427 13.3094 14.9031 13.0437 15.1687C12.7781 15.4344 12.4177 15.5837 12.042 15.5837H4.95866C4.58294 15.5837 4.2226 15.4344 3.95692 15.1687C3.69125 14.9031 3.54199 14.5427 3.54199 14.167V4.25033M5.66699 4.25033V2.83366C5.66699 2.45794 5.81625 2.0976 6.08192 1.83192C6.3476 1.56625 6.70794 1.41699 7.08366 1.41699H9.91699C10.2927 1.41699 10.6531 1.56625 10.9187 1.83192C11.1844 2.0976 11.3337 2.45794 11.3337 2.83366V4.25033" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+												</svg>
+
+												<span>Удалить <span>выбранные</span></span>
+											</button>
+										</div>
+
+										<div class="checkout__links _flex">
+											<a href="/" class="checkout__share">Поделиться</a>
+											<a href="/" class="checkout__download">Скачать</a>
+										</div>
+									</div>
+
+
+									<div class="table-cart-wrap">
+										<div class="table-cart">
+											<div class="table-cart__head _flex">
+												<div class="table-cart__th table-cart__th-first"></div>
+												<div class="table-cart__th table-cart__th-name">Наименование товара</div>
+												<div class="table-cart__th table-cart__th-number">Кол-во</div>
+												<div class="table-cart__th table-cart__th-price">Цена за шт.</div>
+												<div class="table-cart__th table-cart__th-total">Итого</div>
+											</div>
+
+											<div class="table-cart__body">
+												<div class="table-cart__body-top _flex">
+													<div class="table-cart__td table-cart__td-check">
+														<div class="checkbox-inner">
+															<label class="checkbox-inner__label">
+																<input type="checkbox" name="product1">
+
+																<span class="checkbox-inner__text"></span>
+															</label>
+														</div>
+													</div>
+													<div class="table-cart__td table-cart__td-thumb">
+														<a href="/">
+															<img data-src="images2/product.jpg" src="images/img_plug.png" alt="" class="lazyload">
+														</a>
+													</div>
+													<div class="table-cart__td table-cart__td-info">
+														<div class="table-cart__name">
+															<a href="/">Пирамида Лофт</a>
+														</div>
+														<div class="table-cart__code">Артикул: 24984</div>
+														<div class="table-cart__info _flex">
+															<div class="table-cart__info-item _flex">
+																<div class="table-cart__info-name">Размер:</div>
+																<div class="table-cart__info-val">
+																	<span>35×35 H50 см</span>
+																</div>
+															</div>
+															<div class="table-cart__info-item _flex">
+																<div class="table-cart__info-name">Цвет:</div>
+																<div class="table-cart__info-val">
+																	<span>RAL 1011</span>
+																</div>
+															</div>
+															<div class="table-cart__info-item _flex">
+																<div class="table-cart__info-name">Текстура:</div>
+																<div class="table-cart__info-val">
+																	<span>Антика</span>
+																</div>
+															</div>
+														</div>
+													</div>
+													<div class="table-cart__td table-cart__td-number" data-label="Кол-во">
+														<div class="amount table-cart__amount">
+															<div class="amount__val _flex">
+																<button type="button" disabled class="amount__btn amount__btn_minus">
+																	<svg width="9" height="2" viewBox="0 0 9 2" fill="none" xmlns="http://www.w3.org/2000/svg">
+																		<path d="M8.0625 0.562499L4.3125 0.5625L0.5625 0.5625" stroke-width="1.125" stroke-linecap="round"/>
+																	</svg>
+																</button>
+				
+																<input type="text" value="1" data-minimum="1" data-maximum="999" data-step="1" class="amount__input" maxlength="3">
+				
+																<button type="button" class="amount__btn amount__btn_plus">
+																	<svg width="9" height="11" viewBox="0 0 9 11" fill="none" xmlns="http://www.w3.org/2000/svg">
+																		<path d="M4.3125 0.5625V5.0625M4.3125 9.5625V5.0625M4.3125 5.0625H8.0625M4.3125 5.0625H0.5625" stroke-width="1.125" stroke-linecap="round"/>
+																	</svg>
+																</button>
+															</div>
+														</div>
+													</div>
+													<div class="table-cart__td table-cart__td-price" data-label="Цена за шт.">21 240 ₽/шт</div>
+													<div class="table-cart__td table-cart__td-total" data-label="Итого"><b>63 720 ₽</b></div>
+													<div class="table-cart__td table-cart__td-delete">
+														<button class="table-cart__delete">
+															<svg viewBox="0 0 17 17" fill="none" xmlns="http://www.w3.org/2000/svg">
+																<path d="M2.125 4.25H3.54167H14.875" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+																<path d="M13.4587 4.25033V14.167C13.4587 14.5427 13.3094 14.9031 13.0437 15.1687C12.7781 15.4344 12.4177 15.5837 12.042 15.5837H4.95866C4.58294 15.5837 4.2226 15.4344 3.95692 15.1687C3.69125 14.9031 3.54199 14.5427 3.54199 14.167V4.25033M5.66699 4.25033V2.83366C5.66699 2.45794 5.81625 2.0976 6.08192 1.83192C6.3476 1.56625 6.70794 1.41699 7.08366 1.41699H9.91699C10.2927 1.41699 10.6531 1.56625 10.9187 1.83192C11.1844 2.0976 11.3337 2.45794 11.3337 2.83366V4.25033" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+															</svg>
+														</button>
+													</div>
+												</div>
+
+												<div class="table-cart__options _flex">
+													<div class="table-cart__options-title">Добавить опции:</div>
+
+													<div class="radio-bords _flex">
+														<div class="radio-bord">
+															<label class="radio-bord__label">
+																<input type="radio" name="product_optioon1">
+
+																<span class="radio-bord__wrap">
+																	<span class="radio-bord__name">Дренажное отверстие</span>
+																</span>
+															</label>
+														</div>
+														<div class="radio-bord">
+															<label class="radio-bord__label">
+																<input type="radio" name="product_optioon1">
+
+																<span class="radio-bord__wrap">
+																	<span class="radio-bord__name">
+																		<div class="select-wrap">
+																			<select>
+																				<option value="0" data-display="Второе дно"></option>
+																				<option value="1" data-content="<b>Второе дно</b> <span class='size'>25 см</span> <span class='price'>2 550 ₽</span>"></option>
+																				<option value="2" data-content="<b>Второе дно</b> <span class='size'>30 см</span> <span class='price'>2 550 ₽</span>"></option>
+																				<option value="3" data-content="<b>Второе дно</b> <span class='size'>35 см</span> <span class='price'>2 550 ₽</span>"></option>
+																				<option value="4" data-content="<b>Второе дно</b> <span class='size'>40 см</span> <span class='price'>2 550 ₽</span>"></option>
+																				<option value="5" data-content="<b>Второе дно</b> <span class='size'>45 см</span> <span class='price'>2 550 ₽</span>"></option>
+																			</select>
+																		</div>
+																	</span>
+																	<span class="radio-bord__price">2 550 ₽</span>
+																</span>
+															</label>
+														</div>
+														<div class="radio-bord">
+															<label class="radio-bord__label">
+																<input type="radio" name="product_optioon1">
+
+																<span class="radio-bord__wrap">
+																	<span class="radio-bord__name">Скрытые колеса</span>
+																	<span class="radio-bord__price">+4 580 ₽</span>
+																</span>
+															</label>
+														</div>
+														<div class="radio-bord">
+															<label class="radio-bord__label">
+																<input type="radio" name="product_optioon1">
+
+																<span class="radio-bord__wrap">
+																	<span class="radio-bord__name">Утепление</span>
+																	<span class="radio-bord__price">+1 760 ₽</span>
+																</span>
+															</label>
+														</div>
+													</div>
+												</div>
+											</div>
+
+											<div class="table-cart__body">
+												<div class="table-cart__body-top _flex">
+													<div class="table-cart__td table-cart__td-check">
+														<div class="checkbox-inner">
+															<label class="checkbox-inner__label">
+																<input type="checkbox" name="product2">
+
+																<span class="checkbox-inner__text"></span>
+															</label>
+														</div>
+													</div>
+													<div class="table-cart__td table-cart__td-thumb">
+														<a href="/">
+															<img data-src="images2/product.jpg" src="images/img_plug.png" alt="" class="lazyload">
+														</a>
+													</div>
+													<div class="table-cart__td table-cart__td-info">
+														<div class="table-cart__name">
+															<a href="/">Пирамида Лофт</a>
+														</div>
+														<div class="table-cart__code">Артикул: 24984</div>
+														<div class="table-cart__info _flex">
+															<div class="table-cart__info-item _flex">
+																<div class="table-cart__info-name">Размер:</div>
+																<div class="table-cart__info-val">
+																	<span>35×35 H50 см</span>
+																</div>
+															</div>
+															<div class="table-cart__info-item _flex">
+																<div class="table-cart__info-name">Цвет:</div>
+																<div class="table-cart__info-val">
+																	<span>RAL 1011</span>
+																</div>
+															</div>
+															<div class="table-cart__info-item _flex">
+																<div class="table-cart__info-name">Текстура:</div>
+																<div class="table-cart__info-val">
+																	<span>Антика</span>
+																</div>
+															</div>
+														</div>
+													</div>
+													<div class="table-cart__td table-cart__td-number" data-label="Кол-во">
+														<div class="amount table-cart__amount">
+															<div class="amount__val _flex">
+																<button type="button" disabled class="amount__btn amount__btn_minus">
+																	<svg width="9" height="2" viewBox="0 0 9 2" fill="none" xmlns="http://www.w3.org/2000/svg">
+																		<path d="M8.0625 0.562499L4.3125 0.5625L0.5625 0.5625" stroke-width="1.125" stroke-linecap="round"/>
+																	</svg>
+																</button>
+				
+																<input type="text" value="1" data-minimum="1" data-maximum="999" data-step="1" class="amount__input" maxlength="3">
+				
+																<button type="button" class="amount__btn amount__btn_plus">
+																	<svg width="9" height="11" viewBox="0 0 9 11" fill="none" xmlns="http://www.w3.org/2000/svg">
+																		<path d="M4.3125 0.5625V5.0625M4.3125 9.5625V5.0625M4.3125 5.0625H8.0625M4.3125 5.0625H0.5625" stroke-width="1.125" stroke-linecap="round"/>
+																	</svg>
+																</button>
+															</div>
+														</div>
+													</div>
+													<div class="table-cart__td table-cart__td-price" data-label="Цена за шт.">21 240 ₽/шт</div>
+													<div class="table-cart__td table-cart__td-total" data-label="Итого"><b>63 720 ₽</b></div>
+													<div class="table-cart__td table-cart__td-delete">
+														<button class="table-cart__delete">
+															<svg viewBox="0 0 17 17" fill="none" xmlns="http://www.w3.org/2000/svg">
+																<path d="M2.125 4.25H3.54167H14.875" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+																<path d="M13.4587 4.25033V14.167C13.4587 14.5427 13.3094 14.9031 13.0437 15.1687C12.7781 15.4344 12.4177 15.5837 12.042 15.5837H4.95866C4.58294 15.5837 4.2226 15.4344 3.95692 15.1687C3.69125 14.9031 3.54199 14.5427 3.54199 14.167V4.25033M5.66699 4.25033V2.83366C5.66699 2.45794 5.81625 2.0976 6.08192 1.83192C6.3476 1.56625 6.70794 1.41699 7.08366 1.41699H9.91699C10.2927 1.41699 10.6531 1.56625 10.9187 1.83192C11.1844 2.0976 11.3337 2.45794 11.3337 2.83366V4.25033" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+															</svg>
+														</button>
+													</div>
+												</div>
+
+												<div class="table-cart__options _flex">
+													<div class="table-cart__options-title">Добавить опции:</div>
+
+													<div class="radio-bords _flex">
+														<div class="radio-bord">
+															<label class="radio-bord__label">
+																<input type="radio" name="product_optioon2">
+
+																<span class="radio-bord__wrap">
+																	<span class="radio-bord__name">Дренажное отверстие</span>
+																</span>
+															</label>
+														</div>
+														<div class="radio-bord">
+															<label class="radio-bord__label">
+																<input type="radio" name="product_optioon2">
+
+																<span class="radio-bord__wrap">
+																	<span class="radio-bord__name">
+																		<div class="select-wrap">
+																			<select>
+																				<option value="0" data-display="Второе дно"></option>
+																				<option value="1" data-content="<b>Второе дно</b> <span class='size'>25 см</span> <span class='price'>2 550 ₽</span>"></option>
+																				<option value="2" data-content="<b>Второе дно</b> <span class='size'>30 см</span> <span class='price'>2 550 ₽</span>"></option>
+																				<option value="3" data-content="<b>Второе дно</b> <span class='size'>35 см</span> <span class='price'>2 550 ₽</span>"></option>
+																				<option value="4" data-content="<b>Второе дно</b> <span class='size'>40 см</span> <span class='price'>2 550 ₽</span>"></option>
+																				<option value="5" data-content="<b>Второе дно</b> <span class='size'>45 см</span> <span class='price'>2 550 ₽</span>"></option>
+																			</select>
+																		</div>
+																	</span>
+																	<span class="radio-bord__price">2 550 ₽</span>
+																</span>
+															</label>
+														</div>
+														<div class="radio-bord">
+															<label class="radio-bord__label">
+																<input type="radio" name="product_optioon2">
+
+																<span class="radio-bord__wrap">
+																	<span class="radio-bord__name">Скрытые колеса</span>
+																	<span class="radio-bord__price">+4 580 ₽</span>
+																</span>
+															</label>
+														</div>
+														<div class="radio-bord">
+															<label class="radio-bord__label">
+																<input type="radio" name="product_optioon2">
+
+																<span class="radio-bord__wrap">
+																	<span class="radio-bord__name">Утепление</span>
+																	<span class="radio-bord__price">+1 760 ₽</span>
+																</span>
+															</label>
+														</div>
+													</div>
+												</div>
+											</div>
+
+											<div class="table-cart__body">
+												<div class="table-cart__body-top _flex">
+													<div class="table-cart__td table-cart__td-check">
+														<div class="checkbox-inner">
+															<label class="checkbox-inner__label">
+																<input type="checkbox" name="product3">
+
+																<span class="checkbox-inner__text"></span>
+															</label>
+														</div>
+													</div>
+													<div class="table-cart__td table-cart__td-thumb">
+														<a href="/">
+															<img data-src="images2/product.jpg" src="images/img_plug.png" alt="" class="lazyload">
+														</a>
+													</div>
+													<div class="table-cart__td table-cart__td-info">
+														<div class="table-cart__name">
+															<a href="/">Пирамида Лофт</a>
+														</div>
+														<div class="table-cart__code">Артикул: 24984</div>
+														<div class="table-cart__info _flex">
+															<div class="table-cart__info-item _flex">
+																<div class="table-cart__info-name">Размер:</div>
+																<div class="table-cart__info-val">
+																	<span>35×35 H50 см</span>
+																</div>
+															</div>
+															<div class="table-cart__info-item _flex">
+																<div class="table-cart__info-name">Цвет:</div>
+																<div class="table-cart__info-val">
+																	<span>RAL 1011</span>
+																</div>
+															</div>
+															<div class="table-cart__info-item _flex">
+																<div class="table-cart__info-name">Текстура:</div>
+																<div class="table-cart__info-val">
+																	<span>Антика</span>
+																</div>
+															</div>
+														</div>
+													</div>
+													<div class="table-cart__td table-cart__td-number" data-label="Кол-во">
+														<div class="amount table-cart__amount">
+															<div class="amount__val _flex">
+																<button type="button" disabled class="amount__btn amount__btn_minus">
+																	<svg width="9" height="2" viewBox="0 0 9 2" fill="none" xmlns="http://www.w3.org/2000/svg">
+																		<path d="M8.0625 0.562499L4.3125 0.5625L0.5625 0.5625" stroke-width="1.125" stroke-linecap="round"/>
+																	</svg>
+																</button>
+				
+																<input type="text" value="1" data-minimum="1" data-maximum="999" data-step="1" class="amount__input" maxlength="3">
+				
+																<button type="button" class="amount__btn amount__btn_plus">
+																	<svg width="9" height="11" viewBox="0 0 9 11" fill="none" xmlns="http://www.w3.org/2000/svg">
+																		<path d="M4.3125 0.5625V5.0625M4.3125 9.5625V5.0625M4.3125 5.0625H8.0625M4.3125 5.0625H0.5625" stroke-width="1.125" stroke-linecap="round"/>
+																	</svg>
+																</button>
+															</div>
+														</div>
+													</div>
+													<div class="table-cart__td table-cart__td-price" data-label="Цена за шт.">21 240 ₽/шт</div>
+													<div class="table-cart__td table-cart__td-total" data-label="Итого"><b>63 720 ₽</b></div>
+													<div class="table-cart__td table-cart__td-delete">
+														<button class="table-cart__delete">
+															<svg viewBox="0 0 17 17" fill="none" xmlns="http://www.w3.org/2000/svg">
+																<path d="M2.125 4.25H3.54167H14.875" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+																<path d="M13.4587 4.25033V14.167C13.4587 14.5427 13.3094 14.9031 13.0437 15.1687C12.7781 15.4344 12.4177 15.5837 12.042 15.5837H4.95866C4.58294 15.5837 4.2226 15.4344 3.95692 15.1687C3.69125 14.9031 3.54199 14.5427 3.54199 14.167V4.25033M5.66699 4.25033V2.83366C5.66699 2.45794 5.81625 2.0976 6.08192 1.83192C6.3476 1.56625 6.70794 1.41699 7.08366 1.41699H9.91699C10.2927 1.41699 10.6531 1.56625 10.9187 1.83192C11.1844 2.0976 11.3337 2.45794 11.3337 2.83366V4.25033" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+															</svg>
+														</button>
+													</div>
+												</div>
+											</div>
+										</div>
+
+										<div class="btn-wrap">
+											<a href="/" class="btn-bord">Еще 20</a>
+										</div>
+									</div>
+
+
+									<div class="checkout__box">
+										<div class="checkout__title">Выберите способ доставки</div>
+
+										<div class="radio-bigs _flex">
+											<div class="radio-big">
+												<label class="radio-big__label">
+													<input type="radio" name="radio_delivery">
+
+													<span class="radio-big__wrap">
+														<span class="radio-big__name">Доставка до ТК</span>
+														<span class="radio-big__desc">Стоимость 600₽</span>
+													</span>
+												</label>
+											</div>
+											<div class="radio-big">
+												<label class="radio-big__label">
+													<input type="radio" name="radio_delivery" checked>
+
+													<span class="radio-big__wrap">
+														<span class="radio-big__name">Доставка до адреса</span>
+														<span class="radio-big__desc">Стоимость уточнит менеджер</span>
+													</span>
+												</label>
+											</div>
+										</div>
+									</div>
+
+									<div class="checkout__box">
+										<div class="checkout__title">Ваш адрес</div>
+
+										<div class="form-inner__wrap">
+											<div class="form-inner__flex _flex">
+												<div class="form-inner__line">
+													<div class="form-inner__label">Выберите страну<span>*</span></div>
+
+													<div class="form-inner__field">
+														<div class="select-input">
+															<select>
+																<option value="0" data-display="--Выберите--"></option>
+																<option value="1">Россия</option>
+																<option value="1">Россия</option>
+																<option value="1">Россия</option>
+																<option value="1">Россия</option>
+															</select>
+															<button type="button" class="clear-select">
+																<svg width="12" height="12" viewBox="0 0 12 12" fill="none" xmlns="http://www.w3.org/2000/svg">
+																	<path d="M10.75 0.75L0.75 10.75" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+																	<path d="M0.75 0.75L10.75 10.75" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+																</svg>
+															</button>
+														</div>
+													</div>
+												</div>
+												<div class="form-inner__line">
+													<div class="form-inner__label">Выберите регион<span>*</span></div>
+
+													<div class="form-inner__field">
+														<div class="select-input">
+															<select>
+																<option value="0" data-display="--Выберите--"></option>
+																<option value="1">Москва</option>
+																<option value="1">Москва</option>
+																<option value="1">Москва</option>
+																<option value="1">Москва</option>
+															</select>
+															<button type="button" class="clear-select">
+																<svg width="12" height="12" viewBox="0 0 12 12" fill="none" xmlns="http://www.w3.org/2000/svg">
+																	<path d="M10.75 0.75L0.75 10.75" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+																	<path d="M0.75 0.75L10.75 10.75" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+																</svg>
+															</button>
+														</div>
+													</div>
+												</div>
+												<div class="form-inner__line">
+													<div class="form-inner__label">Выберите город</div>
+
+													<div class="form-inner__field">
+														<div class="select-input">
+															<select>
+																<option value="0" data-display="--Выберите--"></option>
+																<option value="1">Москва</option>
+																<option value="1">Москва</option>
+																<option value="1">Москва</option>
+																<option value="1">Москва</option>
+															</select>
+															<button type="button" class="clear-select">
+																<svg width="12" height="12" viewBox="0 0 12 12" fill="none" xmlns="http://www.w3.org/2000/svg">
+																	<path d="M10.75 0.75L0.75 10.75" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+																	<path d="M0.75 0.75L10.75 10.75" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+																</svg>
+															</button>
+														</div>
+													</div>
+												</div>
+											</div>
+
+											<div class="form-inner__line">
+												<div class="form-inner__field">
+													<div class="select-input">
+														<select>
+															<option value="0" data-display="--Выберите--"></option>
+															<option value="1">Адрес</option>
+															<option value="1">Адрес</option>
+															<option value="1">Адрес</option>
+															<option value="1">Адрес</option>
+														</select>
+														<button type="button" class="clear-select">
+															<svg width="12" height="12" viewBox="0 0 12 12" fill="none" xmlns="http://www.w3.org/2000/svg">
+																<path d="M10.75 0.75L0.75 10.75" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+																<path d="M0.75 0.75L10.75 10.75" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+															</svg>
+														</button>
+													</div>
+												</div>
+											</div>
+
+											<div class="form-inner__line">
+												<div class="form-inner__field">
+													<textarea placeholder="Комментарий к заказу" class="form-inner__textarea"></textarea>
+												</div>
+											</div>
+										</div>
+									</div>
+
+									<div class="checkout__box">
+										<div class="checkout__title">Выберите способ оплаты</div>
+
+										<div class="radio-bigs _flex">
+											<div class="radio-big">
+												<label class="radio-big__label">
+													<input type="radio" name="radio_payment">
+
+													<span class="radio-big__wrap">
+														<span class="radio-big__name">Оплата на расчетный счет</span>
+													</span>
+												</label>
+											</div>
+										</div>
+									</div>
+								</div>
+
+								<div class="checkout__colr">
+									<div class="checkout__bg">
+										<div class="checkout-total">
+											<div class="checkout-total__items">
+												<div class="checkout-total__item _flex">
+													<div class="checkout-total__item-name">Товаров</div>
+
+													<div class="checkout-total__item-val">4</div>
+												</div>
+												<div class="checkout-total__item _flex">
+													<div class="checkout-total__item-name">Вес</div>
+
+													<div class="checkout-total__item-val">0.51 кг</div>
+												</div>
+												<div class="checkout-total__item _flex">
+													<div class="checkout-total__item-name">Сумма</div>
+
+													<div class="checkout-total__item-val">2 261 980 ₽</div>
+												</div>
+												<div class="checkout-total__item checkout-total__item_total _flex">
+													<div class="checkout-total__item-name">Итого:</div>
+
+													<div class="checkout-total__item-val">1 130 990 ₽</div>
+												</div>
+											</div>
+
+											<div class="form-inner__submit">
+												<button type="button" class="form-inner__submit-btn">Оформить заказ</button>
+											</div>
+											
+											<div class="form-inner__agree checkbox-agree">
+												<label class="checkbox-agree__label">
+													<input type="checkbox" name="agree" checked>
+
+													<span class="checkbox-agree__text">Я прочитал и принимаю <a href="/" target="_blank">Согласие на обработку персональных данных</a> и соглашаюсь с <a href="/" target="_blank">Политикой обработки персональных данных</a></span>
+												</label>
+											</div>
+										</div>
+									</div>
+								</div>
+							</div>
+						</form>
+					</div>
+				</section>
+			</div>
+
+
+			<footer class="footer-lk">
+				<div class="cont _flex">
+					<div class="footer-lk__copy">&copy; 2009–2025, TFBeton</div>
+
+					<div class="footer-lk__policy">
+						<a href="/">Политика конфиденциальности</a>
+					</div>
+				</div>
+			</footer>
+		</div>
+
+		
+		<div id="callback2" class="modal">
+			<div class="modal__wrap">
+				<div class="modal__title">Кашпо на заказ</div>
+
+				<div class="modal__subtitle">
+					Для оформления заказа Вам необходимо оставить заявку на нашем сайте, написать в WhatsApp или позвонить по телефону. Наши специалисты помогут Вам оформить заказ, предложат оптимальные варианты для реализации ваших идей.
+				</div>
+
+				<form action="" class="form modal__form">
+					<div class="form__line">
+						<input type="text" value="" placeholder="Имя*" class="form__input">
+					</div>
+
+					<div class="form__line">
+						<input type="tel" value="" placeholder="Телефон*" data-mask="+7 (999) 999-99-99" class="form__input">
+					</div>
+
+					<div class="form__line">
+						<input type="email" value="" placeholder="Почта*" class="form__input">
+					</div>
+
+					<div class="form__line">
+						<textarea class="form__textarea" placeholder="Сообщение*"></textarea>
+					</div>
+
+					<div class="modal__info">
+						<div>Вы можете прикрепить файлы</div>
+
+						<div class="modal__desc">Ваши фото, чертежи, эскизы или просто рисунок от руки</div>
+					</div>
+
+					<div class="file-selection">
+
+					</div>
+
+					<div class="form__agree checkbox">
+						<label class="checkbox__label">
+							<input type="checkbox" name="agree" checked>
+
+							<span class="checkbox__text">Нажимая на кнопку "Отправить" вы даете согласие на обработку персональных данных и соглашаетесь с <a href="/" target="_blank">политикой конфиденциальности</a></span>
+						</label>
+					</div>
+
+					<button type="submit" class="form__submit-btn">Отправить</button>
+				</form>
+			</div>
+		</div>
+
+
+		<div class="supports-error">
+			Ваш браузер устарел рекомендуем обновить его до последней версии<br> или использовать другой более современный.
+		</div>
+
+
+		<!-- Подключение javascript файлов -->
+		<script src="js/jquery-3.5.0.min.js"></script>
+
+		<script src="js/swiper-bundle.min.js"></script>
+		<script src="js/fancybox.js"></script>
+		<script src="js/inputmask.min.js"></script>
+		<script src="js/jquery.liMarquee.js"></script>
+
+		<script src="js/nice-select.js"></script>
+
+		<script src="js/functions.js"></script>
+		<script src="js/scripts.js"></script>
+	</body>
+</html>
