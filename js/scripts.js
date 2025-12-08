@@ -9,13 +9,6 @@ if (document.body.clientWidth < 375) {
 	document.getElementsByTagName('meta')['viewport'].content = 'width=375, user-scalable=no'
 }
 
-$(window).on('load', () => {
-	$('.marquee-content').liMarquee({
-		drag: false,
-		hoverStop: true
-	});
-})
-
 
 $(window).on('resize', () => {
 	let windowW = window.outerWidth
