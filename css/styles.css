@@ -5096,7 +5096,7 @@ input[type=checkbox]:checked + .radio-bord__wrap .radio-bord__name::after
 	}
 
 	.payment-item ul span{
-		margin-top: 8px;
+		margin-top: 10px;
 	}
 }
 
@@ -5108,6 +5108,11 @@ input[type=checkbox]:checked + .radio-bord__wrap .radio-bord__name::after
 
 	.wrap-max{
 		padding-bottom: 20px;
+	}
+
+	.block-text blockquote::before{
+		top: 15px;
+		margin-top: 0;
 	}
 }
 
@@ -5140,37 +5145,153 @@ input[type=checkbox]:checked + .radio-bord__wrap .radio-bord__name::after
 	.payment-item__colr{
 		width: 100%;
 		max-width: none;
-		margin-top: 24px;
+		padding-top: 15px;
+		margin-top: 15px;
+		border-top: 1px solid rgba(27, 39, 69, 0.2);;
 	}
 }
 
 @media (max-width: 479px)
 {
 	.page-title {
-        font-size: 32px;
+        font-size: 24px;
     }
 
+	.delivery-sector{
+		margin-top: 24px;
+	}
+
+	.delivery-sector + .delivery-sector{
+		margin-top: 50px;
+	}
+
+	.block-text {
+		font-size: 12px;
+	}
+
 	.block-text h2 {
-        font-size: 20px;
+        font-size: 16px;
+		margin-bottom: 12px;
+    }
+
+	.block-text h3{
+		font-size: 14px;
+		margin-bottom: 12px;
+	}
+
+	.block-text blockquote{
+		font-size: 12px;
+	}
+
+	.block-text blockquote {
+        padding-left: 45px;
+    }
+
+	.block-text blockquote::before{
+		width: 20px;
+		height: 20px;
+		background-size: contain;
+	}
+
+	.small-title {
+        font-size: 14px;
+		margin-bottom: 12px;
+    }
+
+	* + .small-title {
+		margin-top: 20px;
+	}
+
+	.delivery-items {
+        gap: 10px;
     }
 
 	.delivery-item{
-		flex-wrap: wrap;
+		padding: 10px 12px;
 	}
 
 	.delivery-item__img{
-		width: 140px;
-		margin-left: auto;
-		margin-right: auto;
-		margin-bottom: 16px;
+		width: 143px;
+		margin-right: 10px;
+		aspect-ratio: 143/91;
+		padding: 13px;
 	}
 
 	.delivery-item__title{
-		text-align: center;
+		font-size: 14px;
 	}
 
 	.delivery-item__links{
-		justify-content: center;
+		margin: 6px 0 0 -4px;
 	}
+
+	.delivery-item__link{
+		margin: 4px 0 0 4px;
+		font-size: 12px;
+	}
+
+	.block-text_marg{
+		margin-top: 20px;
+	}
+
+	.block-text blockquote + h3 {
+		margin-top: 20px;
+	}
+
+	.payment-item{
+		padding-top: 15px;
+		padding-bottom: 15px;
+	}
+
+	.payment-item ul {
+        font-size: 12px;
+    }
+
+	.payment-item__colr-phone a{
+		font-size: 16px;
+		padding-left: 26px;
+	}
+
+	.payment-item__colr-phone a::before{
+		width: 16px;
+		height: 16px;
+		margin-top: -8px;
+		background-size: contain;
+	}
+
+	.payment-item__coll-phone{
+		margin-top: 15px;
+	}
+
+	.payment-item__coll-phone a{
+		font-size: 16px;
+		padding-left: 26px;
+	}
+
+	.payment-item__coll-phone a::before{
+		width: 16px;
+		height: 16px;
+		margin-top: -8px;
+		background-size: contain;
+	}
+
+	.payment-item__title{
+		font-size: 16px;
+		margin-bottom: 12px;
+	}
+
+	.payment-item__desc{
+		font-size: 12px;
+	}
+
+	.payment-item__info {
+        font-size: 12px;
+		margin-bottom: 16px;
+    }
+
+	.payment-item__btn {
+        width: 100%;
+        line-height: 40px;
+    }
 }
 /*======== End 18.12.2025 ========*/
